@@ -1,0 +1,22 @@
+{
+  "name": "cra-reset-skeleton",
+  "version": "0.0.1",
+  "main": "./server.js",
+  "scripts": {
+    "install-dep": "npm i && cd app && npm i",
+    "start": "node server.js",
+    "server-dev": "nodemon server.js",
+    "client": "cd app && npm start",
+    "storybook": "cd app && npm run storybook",
+    "dev": "concurrently --kill-others-on-fail \"npm run server-dev\" \"npm run client\" \"npm run storybook\""
+  },
+  "author": "mailtokasun@gmail.com",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.1",
+    "nodemon": "^1.19.1"
+  }
+}
